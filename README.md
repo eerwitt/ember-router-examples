@@ -17,7 +17,16 @@ This code is a working example I built based of the guide located at [Ember Appl
 
 I did my best to keep the code as minimal as possible. In order to run I recommend having [Coffeescript](http://coffeescript.org/) on your machine. Once installed you can run `coffee -cw js` from within the root of the project. This will compile the coffee files to the correct js which is automatically included on the page.
 
-At that point you can open the file in any browser which supports [Ember](http://emberjs.com/) to play around with the code.
+At that point you can an example file in any browser which supports [Ember](http://emberjs.com/) to play around with the code.
+
+## Examples
+
+I try to keep each example as self contained as possible even though it requires duplicating some code. All the html files have a corresponding [coffee/js file](https://github.com/eerwitt/ember-router-basicexample/tree/master/js).
+
+1. [Basic-1](https://github.com/eerwitt/ember-router-basicexample/blob/master/basic-1.html) The most basic use of the router with the ability to go from an index route (**state**) to a list of posts and finally to an individual post.
+2. [Basic-2](https://github.com/eerwitt/ember-router-basicexample/blob/master/basic-2.html) A slightly more sophisticated version with the ability to show Trackbacks and Comments.
+3. [Basic-3](https://github.com/eerwitt/ember-router-basicexample/blob/master/basic-3.html) Includes [ember-data](https://github.com/emberjs/data) for the models.
+4. [Basic-4](https://github.com/eerwitt/ember-router-basicexample/blob/master/basic-4.html) Includes some form editing and submissions.
 
 ## Questions (PC LOAD LETTER)
 
