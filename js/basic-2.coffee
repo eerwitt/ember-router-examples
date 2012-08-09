@@ -2,12 +2,12 @@ root = exports ? this
 root.App = Em.Application.create()
 
 # Models
+App.Trackback = Em.Object.extend
+  site: null
+
 App.Comment = Em.Object.extend
   title: null
   body: null
-
-App.Trackback = Em.Object.extend
-  site: null
 
 App.Post = Em.Object.extend
   trackbacks: []
@@ -15,6 +15,35 @@ App.Post = Em.Object.extend
   title: null
   body: null
 
+# Controllers
+App.ApplicationController = Em.ObjectController.extend()
+
+App.TrackbacksController = Em.ArrayController.extend()
+
+App.CommentsController = Em.ArrayController.extend()
+
+App.PostController = Em.ObjectController.extend()
+
+App.PostsController = Em.ArrayController.extend
+  content: []
+
+# Views
+App.ApplicationView = Em.View.extend
+  templateName: 'application'
+
+App.TrackbacksView = Em.View.extend
+  templateName: 'trackbacks'
+
+App.CommentsView = Em.View.extend
+  templateName: 'comments'
+
+App.PostsView = Em.View.extend
+  templateName: 'posts'
+
+App.PostView = Em.View.extend
+  templateName: 'post'
+
+# Test data, this belongs in a fixture but to keep things simple it is here
 testPost = App.Post.create
   comments: [App.Comment.create(title: "Comment from annoying internet user")]
   trackbacks: [App.Trackback.create(site: "http://google.com")]
@@ -22,34 +51,6 @@ testPost = App.Post.create
   intro: "Post Intro"
   body: "Post Body"
   id: 1
-
-# Controllers
-App.CommentsController = Em.ArrayController.extend()
-
-App.TrackbacksController = Em.ArrayController.extend()
-
-App.ApplicationController = Em.ObjectController.extend()
-
-App.PostsController = Em.ArrayController.extend
-  content: []
-
-App.PostController = Em.ObjectController.extend()
-
-# Views
-App.CommentsView = Em.View.extend
-  templateName: 'comments'
-
-App.TrackbacksView = Em.View.extend
-  templateName: 'trackbacks'
-
-App.ApplicationView = Em.View.extend
-  templateName: 'application'
-
-App.PostsView = Em.View.extend
-  templateName: 'posts'
-
-App.PostView = Em.View.extend
-  templateName: 'post'
 
 # Routes
 App.Router = Em.Router.extend
