@@ -1,45 +1,49 @@
 root = exports ? this
 root.App = Em.Application.create()
 
+# Models
 App.Comment = Em.Object.extend
   title: null
   body: null
 
-App.CommentsController = Em.ArrayController.extend
-  content: [App.Comment.create(title: "Comment from annoying internet user")]
-
-App.CommentsView = Em.View.extend
-  templateName: 'comments'
-
 App.Trackback = Em.Object.extend
   site: null
-
-App.TrackbacksController = Em.ArrayController.extend
-  content: [App.Trackback.create(site: "http://google.com")]
-
-App.TrackbacksView = Em.View.extend
-  templateName: 'trackbacks'
 
 App.Post = Em.Object.extend
   title: null
   body: null
 
-App.ApplicationController = Em.ObjectController.extend()
+# Controllers
+App.CommentsController = Em.ArrayController.extend
+  content: [App.Comment.create(title: "Comment from annoying internet user")]
 
-App.ApplicationView = Em.View.extend
-  templateName: 'application'
+App.TrackbacksController = Em.ArrayController.extend
+  content: [App.Trackback.create(site: "http://google.com")]
+
+App.ApplicationController = Em.ObjectController.extend()
 
 App.PostsController = Em.ArrayController.extend
   content: []
 
+App.PostController = Em.ObjectController.extend()
+
+# Views
+App.CommentsView = Em.View.extend
+  templateName: 'comments'
+
+App.TrackbacksView = Em.View.extend
+  templateName: 'trackbacks'
+
+App.ApplicationView = Em.View.extend
+  templateName: 'application'
+
 App.PostsView = Em.View.extend
   templateName: 'posts'
-
-App.PostController = Em.ObjectController.extend()
 
 App.PostView = Em.View.extend
   templateName: 'post'
 
+# Routes
 App.Router = Em.Router.extend
   enableLogging: true
   root: Em.Route.extend
