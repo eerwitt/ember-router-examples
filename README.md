@@ -23,10 +23,10 @@ At that point you can an example file in any browser which supports [Ember](http
 
 I try to keep each example as self contained as possible even though it requires duplicating some code. All the html files have a corresponding [coffee/js file](https://github.com/eerwitt/ember-router-basicexample/tree/master/js).
 
-1. Basic-1[html](https://github.com/eerwitt/ember-router-basicexample/blob/master/basic-1.html)|[js](https://github.com/eerwitt/ember-router-basicexample/blob/master/js/basic-1.coffee) The most basic use of the router with the ability to go from an index route (**state**) to a list of posts and finally to an individual post.
-2. Basic-2[html](https://github.com/eerwitt/ember-router-basicexample/blob/master/basic-2.html)|[js](https://github.com/eerwitt/ember-router-basicexample/blob/master/js/basic-2.coffee) A slightly more sophisticated version with the ability to show Trackbacks and Comments.
-3. Basic-3[html](https://github.com/eerwitt/ember-router-basicexample/blob/master/basic-3.html)|[js](https://github.com/eerwitt/ember-router-basicexample/blob/master/js/basic-3.coffee) Includes [ember-data](https://github.com/emberjs/data) for the models.
-4. Basic-4[html](https://github.com/eerwitt/ember-router-basicexample/blob/master/basic-4.html)|[js](https://github.com/eerwitt/ember-router-basicexample/blob/master/js/basic-4.coffee) Includes some form editing and submissions.
+1. Basic-1 [[html](https://github.com/eerwitt/ember-router-basicexample/blob/master/basic-1.html)|[js](https://github.com/eerwitt/ember-router-basicexample/blob/master/js/basic-1.coffee)] The most basic use of the router with the ability to go from an index route (**state**) to a list of posts and finally to an individual post.
+2. Basic-2 [[html](https://github.com/eerwitt/ember-router-basicexample/blob/master/basic-2.html)|[js](https://github.com/eerwitt/ember-router-basicexample/blob/master/js/basic-2.coffee)] A slightly more sophisticated version with the ability to show Trackbacks and Comments.
+3. Basic-3 [[html](https://github.com/eerwitt/ember-router-basicexample/blob/master/basic-3.html)|[js](https://github.com/eerwitt/ember-router-basicexample/blob/master/js/basic-3.coffee)] Includes [ember-data](https://github.com/emberjs/data) for the models.
+4. Basic-4 [[html](https://github.com/eerwitt/ember-router-basicexample/blob/master/basic-4.html)|[js](https://github.com/eerwitt/ember-router-basicexample/blob/master/js/basic-4.coffee)] Includes some form editing and submissions.
 
 ## Questions (PC LOAD LETTER)
 
