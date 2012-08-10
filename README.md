@@ -11,11 +11,11 @@ This project is meant to help fill in the blanks on how to quickly get moving at
 
 ## Overview
 
-This code is a working built based of the guide located at [Ember Application Structure](http://emberjs.com/guides/outlets/).
+This code is built based on the guide located at [Ember Application Structure](http://emberjs.com/guides/outlets/).
 
-The code as minimal as possible in order to help the ease of setup and isolation. In order to run the examples you need [Coffeescript](http://coffeescript.org/) on your machine. Once installed you can run `coffee -cw js` from within the root of the project. This will compile the coffee files to JS each time they change.
+The code is as minimal as possible in order to help the ease of setup and isolation. In order to run the examples you need [Coffeescript](http://coffeescript.org/) on your machine. Once installed you can run `coffee -cw js` from within the root of the project. This will compile the coffee files to JS each time they change.
 
-At that point you can an example file in any browser which supports [Ember](http://emberjs.com/) to play around with the code.
+At that point you can open an example file in any browser which supports [Ember](http://emberjs.com/) to play around with the code.
 
 ## Examples
 
