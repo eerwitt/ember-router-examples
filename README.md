@@ -5,23 +5,21 @@
 
 [Ember.js](http://emberjs.com) is a great **Client Side MVC framework**.
 
-I like it for it's convention over configuration practice which makes code more minimalistic and easier to maintain.
+They are quickly reaching [release 1.0](http://emberjs.com/blog/2012/08/03/ember-1-0-prerelease/) which means there are constant changes. Recently one fantastic addition is the [Router](http://emberjs.com/blog/2012/08/03/ember-1-0-prerelease/#toc_router) which allows you to easily define the multiple states of your app.
 
-I prefer to use it over [Backbone](http://backbonejs.org/) for larger projects due to ember's maintainability with larger code bases.
-
-I recommend trying both and others from [Spine](http://spinejs.com/) to [batman](http://batmanjs.org/).
+This project is meant to help fill in the blanks on how to quickly get moving at creating an [Ember](http://emberjs.com) app utilizing the router. The JS code is written in [Coffee](http://coffeescript.org).
 
 ## Overview
 
-This code is a working example I built based of the guide located at [Ember Application Structure](http://emberjs.com/guides/outlets/).
+This code is a working built based of the guide located at [Ember Application Structure](http://emberjs.com/guides/outlets/).
 
-I did my best to keep the code as minimal as possible. In order to run I recommend having [Coffeescript](http://coffeescript.org/) on your machine. Once installed you can run `coffee -cw js` from within the root of the project. This will compile the coffee files to the correct js which is automatically included on the page.
+The code as minimal as possible in order to help the ease of setup and isolation. In order to run the examples you need [Coffeescript](http://coffeescript.org/) on your machine. Once installed you can run `coffee -cw js` from within the root of the project. This will compile the coffee files to JS each time they change.
 
 At that point you can an example file in any browser which supports [Ember](http://emberjs.com/) to play around with the code.
 
 ## Examples
 
-I try to keep each example as self contained as possible even though it requires duplicating some code. All the html files have a corresponding [coffee/js file](https://github.com/eerwitt/ember-router-basicexample/tree/master/js).
+Each example is as self contained as possible even though it requires duplicating code. All the html files have a corresponding [coffee/js file](https://github.com/eerwitt/ember-router-basicexample/tree/master/js).
 
 **_Remember_ to run** `coffee -c js/*.coffee` before attempting to use the examples.
 
@@ -30,6 +28,6 @@ I try to keep each example as self contained as possible even though it requires
 3. Basic-3 [[html](https://github.com/eerwitt/ember-router-basicexample/blob/master/basic-3.html) | [js](https://github.com/eerwitt/ember-router-basicexample/blob/master/js/basic-3.coffee)] Includes [ember-data](https://github.com/emberjs/data) for the models.
 4. Basic-4 [[html](https://github.com/eerwitt/ember-router-basicexample/blob/master/basic-4.html) | [js](https://github.com/eerwitt/ember-router-basicexample/blob/master/js/basic-4.coffee)] Includes some form editing and submissions.
 
-## Questions (PC LOAD LETTER)
+## Questions, Comments
 
-If you need help or if I am doing something wrong please don't hesitate to contact me. I am as new to [Ember](http://emberjs.com/) as most people so I don't pretend to know it all.
+If you need help or have improvements please don't hesitate to contact me (or pull request). I am as new to [Ember](http://emberjs.com/) as most people so I don't pretend to know it all.
