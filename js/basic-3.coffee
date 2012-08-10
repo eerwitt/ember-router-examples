@@ -2,10 +2,10 @@ root = exports ? this
 root.App = Em.Application.create()
 
 # Models
-App.Post = Em.Object.extend
-  title: null
-  body: null
-  id: null
+App.Post = DS.Model.extend
+  title: DS.attr "string"
+  body: DS.attr "string"
+  id: DS.attr "number"
 
 # Controllers
 App.ApplicationController = Em.ObjectController.extend()
@@ -26,7 +26,10 @@ App.PostView = Em.View.extend
   templateName: 'post'
 
 # Test data
-testPost = App.Post.create
+App.store = DS.Store.create
+  revision: 4
+
+App.store.load App.Post,
   title: "Post Title"
   body: "Post Body"
   id: 1
@@ -41,7 +44,7 @@ App.Router = Em.Router.extend
       route: '/posts'
       showPost: Em.Router.transitionTo('post')
       connectOutlets: (router) ->
-        router.get("applicationController").connectOutlet('posts', [testPost])
+        router.get("applicationController").connectOutlet('posts', [App.store.find(App.Post, 1)])
     post: Em.Route.extend
       route: '/posts/:post_id'
       connectOutlets: (router, post) ->
