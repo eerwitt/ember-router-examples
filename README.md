@@ -23,10 +23,10 @@ Each example is as self contained as possible even though it requires duplicatin
 
 **_Remember_ to run** `coffee -c js/*.coffee` before attempting to use the examples.
 
-1. Basic-1 [[html](blob/master/basic-1.html) | [js](blob/master/js/basic-1.coffee)] The most basic use of the router with the ability to go from an index route (**state**) to a list of posts and finally to an individual post.
-2. Basic-2 [[html](blob/master/basic-2.html) | [js](blob/master/js/basic-2.coffee)] A slightly more sophisticated version with the ability to show Trackbacks and Comments.
-3. Basic-3 [[html](blob/master/basic-3.html) | [js](blob/master/js/basic-3.coffee)] Includes [ember-data](https://github.com/emberjs/data) for the models.
-4. Basic-4 [[html](blob/master/basic-4.html) | [js](blob/master/js/basic-4.coffee)] Includes some form editing and submissions.
+1. Basic-1 [[html](http://github.com/eerwitt/ember-router-examples/blob/master/basic-1.html) | [js](http://github.com/eerwitt/ember-router-examples/blob/master/js/basic-1.coffee)] The most basic use of the router with the ability to go from an index route (**state**) to a list of posts and finally to an individual post.
+2. Basic-2 [[html](http://github.com/eerwitt/ember-router-examples/blob/master/basic-2.html) | [js](http://github.com/eerwitt/ember-router-examples/blob/master/js/basic-2.coffee)] A slightly more sophisticated version with the ability to show Trackbacks and Comments.
+3. Basic-3 [[html](http://github.com/eerwitt/ember-router-examples/blob/master/basic-3.html) | [js](http://github.com/eerwitt/ember-router-examples/blob/master/js/basic-3.coffee)] Includes [ember-data](https://github.com/emberjs/data) for the models.
+4. Basic-4 [[html](http://github.com/eerwitt/ember-router-examples/blob/master/basic-4.html) | [js](http://github.com/eerwitt/ember-router-examples/blob/master/js/basic-4.coffee)] Includes some form editing and submissions.
 
 ## Questions, Comments
 
